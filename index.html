@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Egypt's Economic Snapshot</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <h1>EGYPT’S ECONOMIC SNAPSHOT</h1>
+    <p>INFLATION, INTEREST RATES, EXCHANGE RATE, TRADE DYNAMICS, FISCAL PERFORMANCE &amp; GROWTH</p>
+  </header>
+
+  <main>
+    <section class="chart-grid">
+      <div class="chart-box"><h3>Annual Inflation (%)</h3><canvas id="chartInflation"></canvas></div>
+      <div class="chart-box"><h3>Interest Rate (%)</h3><canvas id="chartInterest"></canvas></div>
+      <div class="chart-box"><h3>Exchange Rate (EGP/USD)</h3><canvas id="chartFX"></canvas></div>
+      <div class="chart-box"><h3>Balance of Payments (USD bn)</h3><canvas id="chartBOP"></canvas></div>
+      <div class="chart-box"><h3>Budget Expenditures</h3><canvas id="chartBudget"></canvas></div>
+      <div class="chart-box"><h3>Top Growing Sectors (%)</h3><canvas id="chartSectors"></canvas></div>
+    </section>
+
+    <section class="analysis-text">
+      <p id="analysisContent">Monthly commentary goes here.</p>
+    </section>
+  </main>
+
+  <footer><p class="source">Source: CAPMAS, CBE, MOF</p></footer>
+  <script src="charts.js"></script>
+</body>
+</html>
